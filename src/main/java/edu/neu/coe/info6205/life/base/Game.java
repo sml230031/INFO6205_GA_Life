@@ -100,7 +100,7 @@ public class Game implements Generational<Game, Grid>, Countable, Renderable {
 				return generations > 0 ? growth * 1.0 / generations : -0.1;
 		}
 
-		public static final int MaxGenerations = 1000;
+		public static int MaxGenerations;
 
 		/**
 		 * Main program for Game of Life.
@@ -173,7 +173,13 @@ public class Game implements Generational<Game, Grid>, Countable, Renderable {
 		public static Behavior run(Game game, BiConsumer<Long, Grid> gridMonitor, int maxGenerations) {
 				if (game == null) throw new LifeException("run: game must not be null");
 				Game g = game;
-				while (!g.terminated()) g = g.generation(gridMonitor);
+				while (!g.terminated()){
+					g = g.generation(gridMonitor);
+					System.out.println(g.growthRate());
+					if(g.growthRate() < 0) {
+						break;
+					}
+				}
 				int reason = g.generation >= maxGenerations ? 2 : g.getCount() <= 1 ? 0 : 1;
 				return new Behavior(g.generation, g.growthRate(), reason);
 		}
