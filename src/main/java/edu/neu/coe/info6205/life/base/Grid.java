@@ -2,6 +2,7 @@ package edu.neu.coe.info6205.life.base;
 
 import com.google.common.collect.HashMultiset;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -14,7 +15,9 @@ import java.util.stream.Collectors;
  * There can be independent groups in the grid, but if they ever overlap, they must be merged.
  * In practice, you will typically only have one group in a grid.
  */
-public class Grid implements Generational<Grid, Group>, Countable, Renderable {
+public class Grid extends JFrame implements Generational<Grid, Group>, Countable, Renderable {
+
+
 
 		Grid(long generation) {
 				this(generation, new ArrayList<>());
@@ -154,6 +157,9 @@ public class Grid implements Generational<Grid, Group>, Countable, Renderable {
 		private Grid(long generation, List<Group> groups) {
 				this.generation = generation;
 				this.groups = groups;
+
+
+
 		}
 
 		private static List<Group> inner(List<Group> work, List<Group> result) {
@@ -172,6 +178,12 @@ public class Grid implements Generational<Grid, Group>, Countable, Renderable {
 				}
 				result.add(group);
 				return inner(subList, result);
+		}
+
+	public List<Point> getP(){
+		List<Point> result = new ArrayList<>();
+		//result = this.
+		  return result;
 		}
 
 		private final long generation;
