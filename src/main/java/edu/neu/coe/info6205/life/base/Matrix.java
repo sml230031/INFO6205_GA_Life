@@ -10,6 +10,10 @@ import java.util.function.BiFunction;
  * <p>
  * This class was designed to optimize the performance of Groups.
  * However, it hasn't been thoroughly tested and I'm fairly sure it needs significant work.
+ * 此类表示组的物理二维布局。
+ * 按照惯例，它必须在所有活动单元周围具有清晰的行和列。
+ * 此类旨在优化组的性能。
+ * 但是，它尚未经过全面测试，我很确定它需要大量工作。
  */
 class Matrix {
 		/**

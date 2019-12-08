@@ -1,29 +1,33 @@
 package edu.neu.coe.info6205.life.GA;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import edu.neu.coe.info6205.life.Interface.runGA;
 import edu.neu.coe.info6205.life.base.Game;
 import edu.neu.coe.info6205.life.base.Point;
 import io.jenetics.*;
-import io.jenetics.engine.*;
+import io.jenetics.engine.Codecs;
+import io.jenetics.engine.Engine;
+import io.jenetics.engine.EvolutionStatistics;
+import io.jenetics.engine.Limits;
 import io.jenetics.util.IntRange;
-import io.jenetics.engine.Limits.*;
-import io.jenetics.engine.EvolutionStatistics.*;
-import static io.jenetics.engine.EvolutionResult.toBestPhenotype;
-
 
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import static io.jenetics.engine.EvolutionResult.toBestPhenotype;
 
 
 
 
 public class GA {
 
-    int rows;
-    int cols;
+    static int rows = runGA.getRows()!=0? runGA.getRows() : 3;
+    static int cols = runGA.getCols()!=0? runGA.getCols() : 3;
+    //static int rows =  3;
+    //static int cols =  3;
+    static int pop = 1000 ;
 
     public GA(int rows, int cols) {
         this.rows = rows;
@@ -42,7 +46,7 @@ public class GA {
                 }
             }
         if (points.isEmpty()){
-                points.add(new Point(1,1));
+            points.add(new Point(1,1));
         }
         return points;
     }
@@ -69,14 +73,14 @@ public class GA {
     }
 
 
-    public List<Point> run(String[] args) {
-        final Engine<IntegerGene, Long> engine = Engine.builder(GA::eval, Codecs.ofMatrix(IntRange.of(0, 1), this.rows, this.cols)).optimize(Optimize.MAXIMUM).populationSize(200000).alterers(
-                new Mutator<>(0.2),
+    public static List<Point> run() {
+        final Engine<IntegerGene, Long> engine = Engine.builder(GA::eval, Codecs.ofMatrix(IntRange.of(0, 1), rows, cols)).optimize(Optimize.MAXIMUM).populationSize(pop).alterers(
+                new Mutator<>(0.5),
                 new MeanAlterer<>(0.35)).build();
 
         final EvolutionStatistics<Integer, ?> statistics = EvolutionStatistics.ofNumber();
 
-        final Phenotype<IntegerGene, Long> result = engine.stream().limit(Limits.bySteadyFitness(5)).limit(Limits.byExecutionTime(Duration.ofMillis(500))).limit(1000).collect(toBestPhenotype());
+        final Phenotype<IntegerGene, Long> result = engine.stream().limit(Limits.byFixedGeneration(100)).limit(Limits.byExecutionTime(Duration.ofMillis(500))).collect(toBestPhenotype());
         System.out.println(result);
         System.out.println(result.toString());
 
@@ -84,8 +88,6 @@ public class GA {
         int[] nums = toInt(result.toString());
 
         return toPoints(nums, rows, cols);
-
-
     }
 
     public static int[] toInt(String string){
@@ -104,9 +106,12 @@ public class GA {
         return result;
     }
 
-
-//    public static List<Point> toPoints(String str){
-//
+//    public static void main(String[] args) {
+//        //System.out.println(po);
+//        List<Point> po = new ArrayList<>();
+//        po = run();
 //    }
-}
 
+
+
+}
