@@ -114,7 +114,7 @@ public class Group implements Generational<Group, Void>, Renderable, Countable {
 		 */
 		boolean add(Iterable<Point> points) {
 				boolean r = true;
-				for (Point p : points) r = r && addPoint(p);
+				for (Point p : points) {r = r && addPoint(p);}
 				normalize();
 				return r;
 		}
@@ -272,7 +272,15 @@ public class Group implements Generational<Group, Void>, Renderable, Countable {
 		public int getCount() {
 				return points.size();
 		}
+/////////////////////////////////////////////////////////////////////
+//		public Set<Point> getP(){
+////			return points;
+////		}
 
+		public Point returnOrigin(){
+			return origin;
+		}
+////////////////////////////////////////////////////////////////////////
 		/**
 		 * Method to yield a String which represents the cells of this Group.
 		 * Cells are marked '*' unless the cell is at the origin, in which case it is marked 'O'.
@@ -345,11 +353,18 @@ public class Group implements Generational<Group, Void>, Renderable, Countable {
 				return mapped;
 		}
 
+	public List<Point> returnP(){
+		//updateOrigin(points.iterator().next());
+		return result;
+
+	}
+	public List<Point> result = new ArrayList<>();
+
 		private void normalize() {
 				if (points.size() == 0) return;
 				forEach(this::updateExtents);
 				if (origin != null && points.contains(Origin)) return;  // CONSIDER null check of origin may not be necessary
-				updateOrigin(points.iterator().next());
+			    //updateOrigin(points.iterator().next());
 		}
 
 		private void updateOrigin(Point point) {
@@ -474,7 +489,7 @@ public class Group implements Generational<Group, Void>, Renderable, Countable {
 		 *
 		 * @return the points in this Group, sorted.
 		 */
-		private List<Point> getPoints() {
+		public List<Point> getPoints() {
 				return new ArrayList<>(this.points);
 		}
 		// which is furthest from the origin of the coordinate system.
@@ -484,7 +499,7 @@ public class Group implements Generational<Group, Void>, Renderable, Countable {
 				final List<Point> points = CellsAndNeighbors.create(this).updateCells();
 				// add points after moving relative to origin
 				final List<Point> absPoints = new ArrayList<>();
-				for (Point p : points) absPoints.add(p.move(origin));
+				for (Point p : points) {absPoints.add(p.move(origin));  }
 				boolean ok = add(absPoints);
 				assert ok : "Problem adding the new points: " + points;
 				resetExtents();
