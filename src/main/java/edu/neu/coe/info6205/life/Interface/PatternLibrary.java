@@ -10,7 +10,6 @@ import java.awt.event.ActionListener;
 
 
 public class PatternLibrary extends JFrame {
-    // 默认表格模型
     private DefaultTableModel model = null;
     private JTable table = null;
     public int i,j = 1;
@@ -50,7 +49,6 @@ public class PatternLibrary extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                //model.addRow(new String[] { String.valueOf(i++) , getRandomData() });
                 populateTable();
             }
         });
@@ -90,14 +88,5 @@ public class PatternLibrary extends JFrame {
         }
     }
 
-//    private String getRandomData() {
-//        String source = "0123456789";
-//        int len = source.length();
-//        Random random = new Random(System.currentTimeMillis());
-//        //return MessageFormat.format("{0} {0}, ", source.charAt(random.nextInt(len)));
-//        int a = source.charAt(random.nextInt(len));
-//        int b = source.charAt(random.nextInt(len));
-//        return MessageFormat.format("{0} {0}, ", a);
-//    }
 
 }

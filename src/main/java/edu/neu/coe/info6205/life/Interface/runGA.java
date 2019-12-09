@@ -1,6 +1,6 @@
 package edu.neu.coe.info6205.life.Interface;
 
-import edu.neu.coe.info6205.life.GA.GA;
+import edu.neu.coe.info6205.life.base.Mythread;
 import edu.neu.coe.info6205.life.base.Point;
 import edu.neu.coe.info6205.life.library.Library;
 
@@ -10,6 +10,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Future;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ExecutionException;
 
 public class runGA extends JFrame implements ActionListener{
     JButton select;
@@ -17,13 +21,14 @@ public class runGA extends JFrame implements ActionListener{
     JRadioButton jrb1,jrb2=null;
     JPanel jp1,jp2,jp3,jp4=null;
     static JTextField jrf,jcf=null;
-    static JTextArea result = null;
-    JLabel jlb1,jlb2,jlb3=null;
+    static JTextArea result,result2 = null;
+    JLabel jlb1,jlb2,jlb3,jlb4=null;
     ButtonGroup bg=null;
-    public String r ;
+    public String r,r2 ;
     public int i;
 
     public static List<Point> points = new ArrayList<>();
+    public static List<Point> points2 = new ArrayList<>();
 
     public runGA()
     {
@@ -38,9 +43,9 @@ public class runGA extends JFrame implements ActionListener{
 
         jp1=new JPanel();  jp2=new JPanel();  jp3=new JPanel();  jp4=new JPanel();
 
-        jlb1=new JLabel("rows:");  jlb2=new JLabel("cols:");  jlb3=new JLabel("result:");
+        jlb1=new JLabel("rows:");  jlb2=new JLabel("cols:");  jlb3=new JLabel("result:"); jlb4=new JLabel("result2:");
 
-        jrf=new JTextField(10); jcf=new JTextField(10); result = new JTextArea();
+        jrf=new JTextField(10); jcf=new JTextField(10); result = new JTextArea(); result2 = new JTextArea();
 
         jp1.add(jlb1);jp1.add(jrf);
 
@@ -48,8 +53,8 @@ public class runGA extends JFrame implements ActionListener{
 
         //jp4.add(jlb3);       jp4.add(jrb1);      jp4.add(jrb2);
 
-        jp3.add(jb1);        jp3.add(jb2);       jp3.add(jb3);  jp4.add(jlb3); jp4.add(result);
-
+        jp3.add(jb1);        jp3.add(jb2);
+        jp4.add(jlb3); jp4.add("North",result); jp4.add(jlb4);jp4.add("South",result2);
 
         this.add(jp1);       this.add(jp2);      this.add(jp3);       this.add(jp4);
 
@@ -72,6 +77,7 @@ public class runGA extends JFrame implements ActionListener{
         int r = 0;
         if(!jrf.getText().equals("") && isNumeric(jrf.getText())){
             r = Integer.parseInt(jrf.getText());
+            r = r>0? r : 3;
         }
         else r = 3;
         return r;
@@ -80,6 +86,7 @@ public class runGA extends JFrame implements ActionListener{
         int c = 0;
         if(!jcf.getText().equals("") && isNumeric(jcf.getText())){
             c = Integer.parseInt(jcf.getText());
+            c = c>0? c : 3;
         }
         else c = 3;
         return c;
@@ -98,9 +105,28 @@ public class runGA extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
 
         if(e.getSource()== jb1) {
+            ExecutorService pool = Executors.newFixedThreadPool(2);
             int i = 1;
-            GA ga = new GA(getRows(),getCols());
-            points = ga.run();
+            //GA ga = new GA(getRows(),getCols());
+            //points = ga.run();
+            Mythread thread1=new Mythread(getRows(),getCols());
+            Mythread thread2=new Mythread (getRows(),getCols());
+            Future future1=pool.submit(thread1);
+            Future future2=pool.submit(thread2);
+
+            try{
+                points=(List<Point>)future1.get();
+                points2=(List<Point>)future2.get();
+            }
+            catch(InterruptedException a){
+                a.printStackTrace();
+            }
+            catch(ExecutionException a){
+                a.printStackTrace();
+            }
+            finally{
+                pool.shutdown();
+            }
 
             StringBuffer str = new StringBuffer();
             for(Point p:points){
@@ -112,11 +138,24 @@ public class runGA extends JFrame implements ActionListener{
             r = str.toString();
 
             result.setText(r);
-            Library.put(String.valueOf(i++),r);
+            Library.put("result"+String.valueOf(i++)+" : ",r);
+
+            StringBuffer str2 = new StringBuffer();
+            for(Point p:points2){
+                str2.append(p.getX());
+                str2.append(" ");
+                str2.append(p.getY());
+                str2.append(",");
+            }
+            r2 = str2.toString();
+            result2.setText(r2);
+
+            Library.put("result"+String.valueOf(i++)+" : ",r2);
 
 
         } else if(e.getSource()== jb2) {
-
+            jrf.setText("");
+            jcf.setText("");
         }
 
     }
