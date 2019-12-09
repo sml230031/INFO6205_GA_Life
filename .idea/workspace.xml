@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67c9851b-2422-4965-869a-1bea9fc5c152" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Result.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Mythread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/INFO6205_Final_Project_Report.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/GA/GA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/GA/GA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/GameFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/PatternLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/PatternLibrary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/runGA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/runGA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/INFO6205_Final_Project_Report.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Result.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -99,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/GameFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3725">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="475">
+              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="100" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#processWindowEvent#0;class#GameFrame#0" />
@@ -113,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/PatternLibrary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-509">
@@ -235,7 +231,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -455,7 +451,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="198" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575862192889" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575865967391" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TXGameOfLife-master (1)/TXGameOfLife-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -464,13 +460,14 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\workspace\INFO6205_Life-master\src\main\java\edu\neu\coe\info6205\life\Interface" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\INFO6205_GA_Life" />
       <recent name="D:\workspace\INFO6205_GA_Life\src\main\java\edu\neu\coe\info6205\life\base" />
       <recent name="D:\workspace\INFO6205_Life-master\src\main\java\edu\neu\coe\info6205\life\Interface" />
       <recent name="D:\workspace\INFO6205_Life-master\src\main\java\edu\neu\coe\info6205\life" />
@@ -563,11 +560,25 @@
       <option name="project" value="LOCAL" />
       <updated>1575862214814</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="modified">
+      <created>1575862346396</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575862346396</updated>
+    </task>
+    <task id="LOCAL-00008" summary="report">
+      <created>1575865562769</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575865562769</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179298000" />
+    <option name="totallyTimeSpent" value="181482000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -600,7 +611,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286219" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.32685512" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32920355" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32566372" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32482994" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -653,7 +664,8 @@
     <MESSAGE value="all files" />
     <MESSAGE value="new" />
     <MESSAGE value="modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified" />
+    <MESSAGE value="report" />
+    <option name="LAST_COMMIT_MESSAGE" value="report" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/GOLUI.java" />
@@ -903,18 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/GameFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3725">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#processWindowEvent#0;class#GameFrame#0" />
-            <element signature="class#PauseGameActioner#0;class#GameFrame#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/PatternLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-509">
@@ -923,6 +923,18 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1632#1633#0" expanded="true" />
             <element signature="e#1679#1680#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/GameFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#processWindowEvent#0;class#GameFrame#0" />
+            <element signature="class#PauseGameActioner#0;class#GameFrame#0" />
           </folding>
         </state>
       </provider>
