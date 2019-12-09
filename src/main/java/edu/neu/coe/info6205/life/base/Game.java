@@ -67,17 +67,10 @@ public class Game extends JFrame implements Generational<Game, Grid>, Countable,
 				lock.notify();
 			}
 		}
-		public List<Point> returnStartP(){
-			return grid.getGroup().pointsAbsolute();
-		}
 
 		@Override
 		public Game generation(BiConsumer<Long, Grid> monitor) {
 				monitor.accept(generation, grid);
-			    //System.out.println(grid.getGroup().getP());//"___________________________________________________________"+
-                //if(gameFrame!=null)
-					//GameFrame.showPoints(grid.getGroup().pointsAbsolute());
-
 					try {
 						GameFrame.showPoints(grid.getGroup().pointsAbsolute());//getP());//pointsAbsolute());//grid.getGroup().returnP()//grid.getGroup().pointsAbsolute()
 						if (GameFrame.Gamestop()) {
@@ -107,12 +100,6 @@ public class Game extends JFrame implements Generational<Game, Grid>, Countable,
 				this(generation, (l, g) -> {
 				});
 		}
-
-
-//		public Game() {
-//				this(0L);
-//
-//		}
 
 		@Override
 		public String render() {
@@ -148,7 +135,7 @@ public class Game extends JFrame implements Generational<Game, Grid>, Countable,
 
 		/**
 		 * Main program for Game of Life.
-		 * @param args the name of the starting pattern (defaults to "Blip")
+		 //* @param args the name of the starting pattern (defaults to "Blip")
 		 */
 //		public static void main(String[] args) {
 //				String patternName = args.length > 0 ? args[0] : "Blip";
@@ -165,16 +152,6 @@ public class Game extends JFrame implements Generational<Game, Grid>, Countable,
 			this(0L);
 		}
 
-
-
-
-//		public static void startGame(String p){
-//			String patternName = p;
-//			System.out.println("Game of Life with starting pattern: " + patternName);
-//			final String pattern = Library.get(patternName);
-//			final Behavior generations = run(0L, pattern);
-//			System.out.println("Ending Game of Life after " + generations + " generations");
-//		}
 
 		/**
 		 * Run the game starting with pattern.
