@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67c9851b-2422-4965-869a-1bea9fc5c152" name="Default Changelist" comment="" />
+    <list default="true" id="67c9851b-2422-4965-869a-1bea9fc5c152" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/GA/GA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/GA/GA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,15 +51,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/GameFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="133">
+              <caret line="17" column="70" lean-forward="true" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#play#0;class#GameFrame#0" />
-                <element signature="class#SelectPatternActioner#0;class#GameFrame#0" />
                 <element signature="method#processWindowEvent#0;class#GameFrame#0" />
                 <element signature="class#PauseGameActioner#0;class#GameFrame#0" />
               </folding>
@@ -82,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/GA/GA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="34" />
+            <state relative-caret-position="3775">
+              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="371" column="47" lean-forward="true" selection-start-line="371" selection-start-column="47" selection-end-line="371" selection-end-column="47" />
+            <state relative-caret-position="8325">
+              <caret line="371" column="47" selection-start-line="371" selection-start-column="47" selection-end-line="371" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1516#1517#0" expanded="true" />
@@ -175,8 +176,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/runGA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1996">
-              <caret line="103" selection-start-line="103" selection-end-line="103" />
+            <state relative-caret-position="2425">
+              <caret line="106" selection-start-line="106" selection-end-line="106" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,8 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1225">
-              <caret line="54" column="969" selection-start-line="54" selection-start-column="969" selection-end-line="54" selection-end-column="969" />
+            <state relative-caret-position="1250">
+              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -253,13 +254,13 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/Patterns.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/PatternLibrary.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Grid.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Group.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/runGA.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/GA/GA.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/GameFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/GA/GA.java" />
       </list>
     </option>
   </component>
@@ -291,67 +292,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
-              <item name="main" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
-              <item name="main" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
-              <item name="main" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
-              <item name="life" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
-              <item name="main" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
-              <item name="life" type="1f31426a:PackageElementNode" />
-              <item name="base" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
-              <item name="main" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
-              <item name="life" type="1f31426a:PackageElementNode" />
-              <item name="library" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
-              <item name="test" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
-              <item name="test" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
-              <item name="test" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
-              <item name="life" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
-              <item name="test" type="616d4139:PackageViewModuleNode" />
-              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
-              <item name="life" type="1f31426a:PackageElementNode" />
-              <item name="base" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
+            <path>
+              <item name="INFO6205_Life-master" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="INFO6205" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
             <path>
               <item name="INFO6205_Life-master" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
@@ -434,31 +381,65 @@
               <item name="coe" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="info6205" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="life" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="GA" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="INFO6205_Life-master" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src/main" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="neu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="coe" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="info6205" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="life" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Interface" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="INFO6205_Life-master" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src/main" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="neu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="coe" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="info6205" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="life" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="library" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="main" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="main" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
+              <item name="life" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="main" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
+              <item name="life" type="1f31426a:PackageElementNode" />
+              <item name="base" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="main" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
+              <item name="life" type="1f31426a:PackageElementNode" />
+              <item name="library" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="test" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="test" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="test" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
+              <item name="life" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="INFO6205_Life-master" type="58d84e3e:PackageViewProjectNode" />
+              <item name="test" type="616d4139:PackageViewModuleNode" />
+              <item name="edu.neu.coe.info6205" type="1f31426a:PackageElementNode" />
+              <item name="life" type="1f31426a:PackageElementNode" />
+              <item name="base" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -486,7 +467,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="198" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575844049959" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575856176081" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -495,7 +476,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -549,6 +530,7 @@
       <workItem from="1575583473385" duration="37218000" />
       <workItem from="1575746322035" duration="29895000" />
       <workItem from="1575831595175" duration="5254000" />
+      <workItem from="1575845058440" duration="2210000" />
     </task>
     <task id="LOCAL-00001" summary="added GA, modified UI">
       <created>1575760068096</created>
@@ -582,7 +564,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171319000" />
+    <option name="totallyTimeSpent" value="173529000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -597,7 +579,7 @@
     <frame x="-7" y="-7" width="1295" height="697" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17057396" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17299919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -615,7 +597,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286219" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.32685512" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="11" visible="true" weight="0.32920355" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32566372" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -898,27 +880,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="54" column="969" selection-start-line="54" selection-start-column="969" selection-end-line="54" selection-end-column="969" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/base/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="371" column="47" lean-forward="true" selection-start-line="371" selection-start-column="47" selection-end-line="371" selection-end-column="47" />
+        <state relative-caret-position="8325">
+          <caret line="371" column="47" selection-start-line="371" selection-start-column="47" selection-end-line="371" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1516#1517#0" expanded="true" />
@@ -967,20 +932,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/runGA.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1996">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        <state relative-caret-position="400">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/GA/GA.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/runGA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="34" />
+        <state relative-caret-position="2425">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -989,14 +954,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/Interface/GameFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="133">
+          <caret line="17" column="70" lean-forward="true" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#play#0;class#GameFrame#0" />
-            <element signature="class#SelectPatternActioner#0;class#GameFrame#0" />
             <element signature="method#processWindowEvent#0;class#GameFrame#0" />
             <element signature="class#PauseGameActioner#0;class#GameFrame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/library/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/coe/info6205/life/GA/GA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3775">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

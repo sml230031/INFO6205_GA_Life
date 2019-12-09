@@ -1,6 +1,5 @@
 package edu.neu.coe.info6205.life.GA;
 
-import edu.neu.coe.info6205.life.Interface.runGA;
 import edu.neu.coe.info6205.life.base.Game;
 import edu.neu.coe.info6205.life.base.Point;
 import io.jenetics.*;
@@ -10,6 +9,9 @@ import io.jenetics.engine.EvolutionStatistics;
 import io.jenetics.engine.Limits;
 import io.jenetics.util.IntRange;
 
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,11 +25,8 @@ import static io.jenetics.engine.EvolutionResult.toBestPhenotype;
 
 public class GA {
 
-    static int rows = runGA.getRows()!=0? runGA.getRows() : 3;
-    static int cols = runGA.getCols()!=0? runGA.getCols() : 3;
-    //static int rows =  3;
-    //static int cols =  3;
-    static int pop = 1000 ;
+    public int rows;
+    public int cols;
 
     public GA(int rows, int cols) {
         this.rows = rows;
@@ -68,13 +67,13 @@ public class GA {
 
     public static Long eval(int[][] gt){
         List<Point> points = toPoints(gt);
-        Game.MaxGenerations = 100;
+        Game.MaxGenerations = 1000;
         return Game.run(0L, points, Game.MaxGenerations).generation;
     }
 
 
-    public static List<Point> run() {
-        final Engine<IntegerGene, Long> engine = Engine.builder(GA::eval, Codecs.ofMatrix(IntRange.of(0, 1), rows, cols)).optimize(Optimize.MAXIMUM).populationSize(pop).alterers(
+    public List<Point> run() {
+        final Engine<IntegerGene, Long> engine = Engine.builder(GA::eval, Codecs.ofMatrix(IntRange.of(0, 1), this.rows, this.cols)).optimize(Optimize.MAXIMUM).populationSize(1000).alterers(
                 new Mutator<>(0.5),
                 new MeanAlterer<>(0.35)).build();
 
@@ -85,9 +84,27 @@ public class GA {
         System.out.println(result.toString());
 
         String p = result.toString();
-        int[] nums = toInt(result.toString());
+        int[] num = toInt(result.toString());
 
-        return toPoints(nums, rows, cols);
+        List<Point> points = toPoints(num, rows, cols);
+
+        StringBuffer str = new StringBuffer();
+        for(Point point:points){
+            str.append(point.getX());
+            str.append(" ");
+            str.append(point.getY());
+            str.append(",");
+        }
+
+        stringWritter(getSeed(p), str.toString());
+        return points;
+    }
+
+    public static String getSeed(String string){
+        Pattern p = Pattern.compile("[^0-9]");
+        Matcher m = p.matcher(string);
+        String str = m.replaceAll("").trim();
+        return str;
     }
 
     public static int[] toInt(String string){
@@ -105,6 +122,23 @@ public class GA {
         }
         return result;
     }
+
+    public static void stringWritter(String seed, String str){
+        String filepath = "/Users/myronsong/Downloads/INFO6205_GA_Life/Result.txt";
+        try {
+            FileWriter fw=new FileWriter(filepath,true);
+            fw.write("seed:"+seed+"  Points:"+str+"\n");
+            fw.flush();
+            fw.close();
+//            flag=true;
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 //    public static void main(String[] args) {
 //        //System.out.println(po);

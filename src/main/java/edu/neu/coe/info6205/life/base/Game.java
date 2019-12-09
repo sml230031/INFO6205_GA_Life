@@ -53,9 +53,6 @@ public class Game extends JFrame implements Generational<Game, Grid>, Countable,
 				return Objects.hash(grid);
 		}
 		public static Object lock = new Object();
-		public Object returnlock(){
-			return lock;
-		}
 		public void onPause() {
 			synchronized (lock) {
 				try {

@@ -72,6 +72,7 @@ public class runGA extends JFrame implements ActionListener{
         int r = 0;
         if(!jrf.getText().equals("") && isNumeric(jrf.getText())){
             r = Integer.parseInt(jrf.getText());
+            r = r>0? r : 3;
         }
         else r = 3;
         return r;
@@ -80,6 +81,7 @@ public class runGA extends JFrame implements ActionListener{
         int c = 0;
         if(!jcf.getText().equals("") && isNumeric(jcf.getText())){
             c = Integer.parseInt(jcf.getText());
+            c = c>0? c : 3;
         }
         else c = 3;
         return c;
@@ -100,6 +102,7 @@ public class runGA extends JFrame implements ActionListener{
         if(e.getSource()== jb1) {
             int i = 1;
             GA ga = new GA(getRows(),getCols());
+
             points = ga.run();
 
             StringBuffer str = new StringBuffer();
@@ -112,11 +115,12 @@ public class runGA extends JFrame implements ActionListener{
             r = str.toString();
 
             result.setText(r);
-            Library.put(String.valueOf(i++),r);
+            Library.put("result"+String.valueOf(i++)+" : ",r);
 
 
         } else if(e.getSource()== jb2) {
-
+            jrf.setText("");
+            jcf.setText("");
         }
 
     }
