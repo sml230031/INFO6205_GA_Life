@@ -15,7 +15,6 @@ public class GameFrame extends JFrame {
 
         public static String pattern = "Mine";
 
-        private JButton SelectPatternBtn = new JButton("Choose File");
         private JButton startGameBtn = new JButton("StartGame");
         private JButton pauseGameBtn = new JButton("Pause");
         private JLabel durationPromtLabel = new JLabel("              Animation interval setting(ms)");

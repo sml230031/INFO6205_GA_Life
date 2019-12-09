@@ -124,7 +124,7 @@ public class GA {
     }
 
     public static void stringWritter(String seed, String str){
-        String filepath = "/Users/myronsong/Downloads/INFO6205_GA_Life/Result.txt";
+        String filepath = "Result.txt";
         try {
             FileWriter fw=new FileWriter(filepath,true);
             fw.write("seed:"+seed+"  Points:"+str+"\n");
